@@ -1,0 +1,90 @@
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertikal centrering */
+  align-items: center;       /* Horisontell centrering */
+  min-height: 100vh;         /* Fyller hela höjden */
+  background: #f9f9f9;       /* Valfri bakgrundsfärg för kontrast */
+}
+
+/* Formulärcontainer */
+.form-wrapper {
+  background-color: #ea7977;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* Input-fält */
+input[type="text"] {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* Knappar */
+button {
+  background: #ffd600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ffb300;
+}
+
+.top-center-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;        /* centrerar horisontellt */
+  position: fixed;                /* fixerar i viewporten */
+  top: 30px;                      /* lite marginal från toppen */
+  left: 0;
+  z-index: 10;                    /* så att den är över annat innehåll vid behov */
+}
+
+.todos-content {
+  margin-top: 200px;              /* se till att todo-listan ej hamnar under formuläret */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    /* eller 100%, max-width osv enligt din smak */
+  background: #fff;
+  border-radius: 10px;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.todo-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.todo-container {
+    width: 40%;
+}
